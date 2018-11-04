@@ -2,6 +2,7 @@ print("Jak masz na imię?")
 name = input()
 print("Ile masz lat?")
 age = input()
+age = int(age)
 print("Podaj hasło:")
 password = input()
 if name == 'Marta':
@@ -10,11 +11,11 @@ if name == 'Marta':
         print("Masz dostęp.")
     else:
         print("Nieprawidłowe hasło.")
-elif 12 >= int(age):
+elif 12 <= age:
     print("Nie jesteś Alicją. dzieciaku.")
-elif int(age) > 12:
+elif age > 12 and age < 100:
     print("Jesteś wampirem?")
-elif int(age) > 100:
+elif age > 100:
     print("dziadku")
 else:
     print("Nie znamy się")

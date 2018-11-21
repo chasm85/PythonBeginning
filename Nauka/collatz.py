@@ -17,4 +17,4 @@ try:
         if liczba == 1:
             break
 except ValueError:
-    print("Podaj liczbę całkowitą")
+    print("Musisz podać liczbę całkowitą")
